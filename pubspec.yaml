@@ -1,0 +1,22 @@
+name: flutter_pollfish_uni
+description: A Flutter plugin for rendering Pollfish surveys within an app
+version: 4.0.5
+homepage: https://www.pollfish.com/publisher/
+repository: https://github.com/pollfish/flutter-plugin-pollfish
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.pollfish.flutterpollfishuni
+        pluginClass: FlutterPollfishPlugin
+      ios:
+        pluginClass: FlutterPollfishPlugin
